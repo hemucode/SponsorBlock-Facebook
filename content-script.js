@@ -1,3 +1,11 @@
+/*
+ * content-script.js
+ * https://github.com/hemucode/SponsorBlock-Facebook/
+ * MIT licensed
+ *
+ * Copyright (c) 2022 hemucode
+ */
+ 
 $(function () {
     let F16babd = $(document),
         F1e6f5e = 0,
