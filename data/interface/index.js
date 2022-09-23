@@ -20,10 +20,10 @@ function translateHTML (dataKey = 'message') {
 }
 
 function linkButton() {
-  document.querySelector('.teaser').href = `https://www.downloadhub.cloud/2022/09/skip-video-ads-youtube.html`;
+  document.querySelector('.teaser').href = `https://www.downloadhub.cloud/2022/09/sponsorblock-for-facebook.html`;
   document.querySelector('.youtube').href = `https://youtube.com/c/HemantaGayen`;
   document.querySelector('.facebook').href = `https://www.facebook.com/codehemu/`;
-  document.querySelector('.website').href = `https://www.downloadhub.cloud/2022/09/skip-video-ads-youtube.html`;
+  document.querySelector('.website').href = `https://www.downloadhub.cloud/`;
 }
 
 function hoverButton(){
@@ -32,6 +32,7 @@ function hoverButton(){
   document.querySelector(".cta-description").addEventListener("click", linkopen);
   document.querySelector(".cta-close").addEventListener("click", messageclose);
   document.querySelector("#header-icons").addEventListener("click", headericons);
+  document.querySelector(".devoloperid").addEventListener("click", devoloperid);
   if (localStorage.block=="block") {
     document.querySelector(".div_myadblock").style.display="none";
   }
@@ -55,6 +56,9 @@ function mouseOut() {
     document.querySelector(".div_myadblock").style.background="#fff";
 }
 
+function devoloperid(){
+    window.open("https://www.downloadhub.cloud/",'_blank');
+}
 function linkopen(){
   if (localStorage.message=="nyancat") {
     window.open("https://www.codehemu.com/2022/04/nyancat.html",'_blank');
@@ -72,7 +76,7 @@ function messageclose(){
   localStorage.setItem("message", "nyancat");
 }
 function headericons(){
-    window.open("https://www.downloadhub.cloud/2022/09/skip-video-ads-youtube.html#CSS2",'_blank');
+    window.open("https://www.downloadhub.cloud/2022/09/sponsorblock-for-facebook.html#CSS2",'_blank');
 }
 
 function saveOptions() {
