@@ -1,0 +1,26 @@
+{
+   "app_description": {
+      "message": "迷惑な広告なしで、迷惑なスポンサー投稿や推奨投稿をすべて Facebook™ ビデオから削除します。"
+   },
+   "app_name": {
+      "message": "SponsorBlock Facebook™ - スポンサーシップをスキップ"
+   },
+   "app_short_name": {
+      "message": "Facebook™のSponsorBlock"
+   },
+   "sponsored_ads": {
+      "message": "スポンサー投稿ブロック"
+   },
+   "suggested_ads": {
+      "message": "提案された投稿ブロック"
+   },
+   "video_ads": {
+      "message": "動画広告のブロック"
+   },
+   "full_description": {
+      "message": "SponsorBlock を使用すると、スポンサー、イントロ、アウトロ、サブスクリプション リマインダー、その他の Facebook 動画の煩わしい部分をスキップできます。"
+   },
+   "rate": {
+      "message": "私たちを助け、評価してください"
+   }
+}

@@ -1,0 +1,26 @@
+{
+   "app_description": {
+      "message": "Removes all annoying sponsored and suggested posts from Facebook™, video without annoying Ads."
+   },
+   "app_name": {
+      "message": "SponsorBlock Facebook™ - Skip Sponsorships"
+   },
+   "app_short_name": {
+      "message": "SponsorBlock Facebook™"
+   },
+   "sponsored_ads": {
+      "message": "Sponsored Posts Block"
+   },
+   "suggested_ads": {
+      "message": "Suggested Posts Block"
+   },
+   "video_ads": {
+      "message": "Video Ads Block"
+   }, 
+   "full_description": {
+      "message": "SponsorBlock lets you skip over sponsors, intros, outros, subscription reminders, and other annoying parts of Facebook videos and posts. currently not all video ads will be blocked."
+   },
+   "rate": {
+      "message": "Please help and rate us!"
+   }
+}

@@ -1,0 +1,27 @@
+{
+   "app_description": {
+      "message": "성가신 광고가 없는 동영상, Facebook™에서 모든 성가신 후원 및 제안 게시물을 제거합니다."
+   },
+   "app_name": {
+      "message": "SponsorBlock Facebook™ - 후원 건너뛰기"
+   },
+   "app_short_name": {
+      "message": "Facebook™용 SponsorBlock"
+   },
+   "sponsored_ads": {
+      "message": "스폰서 게시물 차단"
+   },
+   "suggested_ads": {
+      "message": "추천 게시물 차단"
+   },
+   "video_ads": {
+      "message": "동영상 광고 차단"
+   },
+   "full_description": {
+      "message": "SponsorBlock을 사용하면 후원자, 인트로, 아웃트로, 구독 알림 및 Facebook 비디오의 기타 성가신 부분을 건너뛸 수 있습니다."
+   },
+   "rate": {
+      "message": "도와주시고 평가해주세요"
+   }
+}
+

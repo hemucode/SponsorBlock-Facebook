@@ -1,0 +1,26 @@
+{
+   "app_description": {
+      "message": "Elimina todas las publicaciones molestas patrocinadas y sugeridas de Facebook™, video sin anuncios molestos."
+   },
+   "app_name": {
+      "message": "SponsorBlock Facebook™ - Omitir patrocinios"
+   },
+   "app_short_name": {
+      "message": "SponsorBlock Facebook™"
+   },
+   "sponsored_ads": {
+      "message": "Bloque de publicaciones patrocinadas"
+   },
+   "suggested_ads": {
+      "message": "Bloque de publicaciones sugeridas"
+   },
+   "video_ads": {
+      "message": "Bloque de anuncios de video"
+   },
+   "full_description": {
+      "message": "SponsorBlock lets you skip over sponsors, intros, outros, subscription reminders, and other annoying parts of Facebook videos."
+   },
+   "rate": {
+      "message": "Por favor ayúdenos"
+   }
+}
