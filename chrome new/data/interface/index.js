@@ -1,32 +1,3 @@
-function saveOptions() {
-  const videoAdBlocked = document.getElementById('blockVideoAds').checked,
-  sponsoredBlocked = document.getElementById('blockSponsoredPosts').checked,
-  suggestedBlocked = document.getElementById('blockSuggestedPosts').checked,
-  id = this.id;
-  chrome.storage.sync.set({videoAdBlocked: videoAdBlocked, sponsoredBlocked: sponsoredBlocked, suggestedBlocked: suggestedBlocked});
-
-  chrome.tabs.query({currentWindow: true}, function(tabs){
-    for (let i = 0; i < tabs.length; i++) {
-    chrome.tabs.get(tabs[i].id, function(tab) {
-      if (tab.url.indexOf('facebook.com') > 0) {
-        chrome.tabs.reload(tab.id);
-        chrome.action.setBadgeText({text: '', tabId: tab.id});
-      }
-    });
-    }
-});
-}
-function restoreOptions() {
-  chrome.storage.sync.get({videoAdBlocked: false, sponsoredBlocked: true, suggestedBlocked: true}, function(items) {
-    document.getElementById('blockVideoAds').checked = items.videoAdBlocked;
-    document.getElementById('blockSponsoredPosts').checked = items.sponsoredBlocked;
-  document.getElementById('blockSuggestedPosts').checked = items.suggestedBlocked;
-  });
-}
-document.addEventListener('DOMContentLoaded', restoreOptions);
-document.getElementById('blockVideoAds').addEventListener('change', saveOptions);
-document.getElementById('blockSponsoredPosts').addEventListener('change', saveOptions);
-document.getElementById('blockSuggestedPosts').addEventListener('change', saveOptions);
 domReady(() => {
   linkButton()
   hoverButton()
@@ -107,4 +78,31 @@ function messageclose(){
 function headericons(){
     window.open("https://www.downloadhub.cloud/2022/09/sponsorblock-for-facebook.html#CSS2",'_blank');
 }
+
+function saveOptions() {
+  const sponsoredBlocked = document.getElementById('blockSponsoredPosts').checked,
+  suggestedBlocked = document.getElementById('blockSuggestedPosts').checked,
+  id = this.id;
+  chrome.storage.sync.set({sponsoredBlocked: sponsoredBlocked, suggestedBlocked: suggestedBlocked});
+
+  chrome.tabs.query({currentWindow: true}, function(tabs){
+    for (let i = 0; i < tabs.length; i++) {
+		chrome.tabs.get(tabs[i].id, function(tab) {
+			if (tab.url.indexOf('facebook.com') > 0) {
+				chrome.tabs.reload(tab.id);
+				chrome.action.setBadgeText({text: '', tabId: tab.id});
+			}
+		});
+    }
+});
+}
+function restoreOptions() {
+  chrome.storage.sync.get({sponsoredBlocked: true, suggestedBlocked: true}, function(items) {
+    document.getElementById('blockSponsoredPosts').checked = items.sponsoredBlocked;
+	document.getElementById('blockSuggestedPosts').checked = items.suggestedBlocked;
+  });
+}
+document.addEventListener('DOMContentLoaded', restoreOptions);
+document.getElementById('blockSponsoredPosts').addEventListener('change', saveOptions);
+document.getElementById('blockSuggestedPosts').addEventListener('change', saveOptions);
 
