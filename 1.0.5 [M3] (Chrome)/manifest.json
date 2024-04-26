@@ -31,10 +31,8 @@
       "48": "data/icons/48.png",
       "64": "data/icons/64.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgfbEoFcpG+Cs3aXfzUayql/0hNGj1YGFkUYuRRodYuTDUhAk0X3oRaN8GqCpGyFwZIBII3fSs0Ds5QUwJOCwgpS144azfm9GSOz1tAtGAfmFp2V5BRZq3ICZDYa46EbZje0bfEMSgWMyy61erh0+V8gCjHUKAscBYPnafMsyxiuCfODCVWybAQk7ClU99FsYwslBH0lWYlQXHMdpPIdnZIUTxVNVssRZMKBiFLNatGKawH23XF2/F6kpKXJtInNs5zubSctdP8Ss6R2Qmng+aCcDHoI9flYpYrzPjLdgvz7Y+cK0oljL3wpIq4eSyRYNA3b4+6W27vgg7hPRQptyRwIDAQAB",
    "manifest_version": 3,
    "name": "__MSG_app_name__",
    "permissions": [ "storage", "tabs" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.0.5"
 }

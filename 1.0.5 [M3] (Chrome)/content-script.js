@@ -20,7 +20,7 @@ chrome['storage']['sync']['get']({
 blockSponsoredEnabled = a['sponsoredBlocked'], blockSuggestedEnabled = a['suggestedBlocked'];
 });
 const d = ((() => {
-    let b = '', g = 0, j = 'div[role=main] h3+div:not([class])', k = 'feedContainer', q = ':scope>div', v = ':scope div div>span>span[id]:not([class]) >span:nth-child(2)>span>a>span', w = 'href', x = 'div[role="feed"]> * div div>span>span:not([id])>span>span>a>span>span>span', y = '/ads/', z = [
+    let b = '', g = 0, j = 'div[role=main] h3+div:not([class])', k = 'CometFeedUnit', q = ':scope>div', v = ':scope div div>span>span[id]:not([class]) >span:nth-child(2)>span>a>span', w = 'href', x = 'div[role="feed"]> * div div>span>span:not([id])>span>span>a>span>span>span', y = '/ads/', z = [
             'Sponsored',
             'Publicidad',
             'Gesponsert',
