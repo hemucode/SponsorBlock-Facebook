@@ -3,6 +3,13 @@
  * https://github.com/hemucode/SponsorBlock-Facebook/
  * MIT licensed
  *
+ * Copyright (c) 2022 hemucode
+ */
+/*
+ * content-script.js
+ * https://github.com/hemucode/SponsorBlock-Facebook/
+ * MIT licensed
+ *
  * Copyright (c) 2023 hemucode
  */
 

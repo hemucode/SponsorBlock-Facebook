@@ -14,7 +14,6 @@
    },
    "content_scripts": [ {
       "js": [ "content-script.js" ],
-      "match_origin_as_fallback": true,
       "matches": [ "*://*.facebook.com/*" ],
       "run_at": "document_start"
    } ],

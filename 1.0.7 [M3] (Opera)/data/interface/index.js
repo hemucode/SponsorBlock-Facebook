@@ -2,7 +2,6 @@ domReady(() => {
   linkButton()
   hoverButton()
   translateHTML()
-  rate()
   hydrate()
 })
 
@@ -21,16 +20,8 @@ function translateHTML (dataKey = 'message') {
   }
 }
 
-function rate(){
-  const updateUrl = chrome.runtime.getManifest().update_url?.toLowerCase();
-  const id = chrome.runtime.id;
-  const storeUrl = (updateUrl && updateUrl.includes("microsoft")) ?
-      `https://microsoftedge.microsoft.com/addons/detail/` + id :
-      `https://chrome.google.com/webstore/detail/${id}/reviews`;
-  document.querySelectorAll(".teaser").forEach(el => el.setAttribute("href", storeUrl));
-}
-
 function linkButton() {
+  document.querySelector('.teaser').href = `https://addons.opera.com/extensions/details/sponsorblock-facebooktm-skip-sponsorships-2/`;
   document.querySelector('.youtube').href = `https://youtube.com/c/HemantaGayen`;
   document.querySelector('.facebook').href = `https://www.facebook.com/codehemu/`;
   document.querySelector('.website').href = `https://www.downloadhub.cloud/`;
@@ -50,7 +41,7 @@ function hoverButton(){
 }  
 function mouseOver() {
   if (localStorage.message=="nyancat") {
-    document.querySelector(".cta-message").innerText="Install YouTube Nyan Cat";
+    document.querySelector(".cta-message").innerText="YouTube Nyan Cat";
     document.querySelector(".div_myadblock").style.background="#a900ff";
   }else{
     document.querySelector(".cta-message").innerText="Search with Facebook";
@@ -61,13 +52,13 @@ function mouseOver() {
 } 
 
 function mouseOut() {
-    document.querySelector(".cta-message").innerText="Upgrade your work";
+    document.querySelector(".cta-message").innerText="Looking for Good addons";
     document.querySelector(".cta-close").style.display="none";
     document.querySelector(".div_myadblock").style.background="#fff";
 }
 
 function devoloperid(){
-    window.open("https://www.downloadhub.cloud/",'_blank');
+    window.open("https://www.downloadhub.cloud/?reason=support");
 }
 function linkopen(){
   if (localStorage.message=="nyancat") {
@@ -88,6 +79,7 @@ function messageclose(){
 function headericons(){
     window.open("https://www.downloadhub.cloud/2022/09/sponsorblock-for-facebook.html#CSS2",'_blank');
 }
+
 
 
 async function hydrate() {
