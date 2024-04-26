@@ -1,0 +1,1 @@
+document.getElementById("MNewsFeed") ? m() : d();

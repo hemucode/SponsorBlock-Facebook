@@ -1,0 +1,10 @@
+/* XXXXXXXX/WWW.CODEHEMU.COM/XXXXXXXXX */
+div[data-instancekey]>div>div:nth-child(8),
+div[role="complementary"]>div>div>div>div>div>span,
+/* */
+article:has(div[data-sigil="m-feed-voice-subtitle"]>:first-child:not(a)),
+div:not([class]):has(div [class=aov4n071]),
+#feedContainer>div:has(div div>span>span[id]:not([class])>div:nth-child(2)[role="button"]),
+#feedContainer>div:has(div div>span>span[id]:not([class])>a:nth-child(2)[href^="/business"]) {
+  display: none !important;
+}
